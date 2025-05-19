@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Time</title>
+</head>
+<body>
+<script>
+	window.onload = function() {
+   	 setInterval(function() {
+   	   var date = new Date();
+   	   var displayDate = date.toLocaleDateString();
+  	    var displayTime = date.toLocaleTimeString();
+  	    document.getElementById('time').innerHTML = displayTime;
+ 	   }, 1000); // 1000 milliseconds = 1 second
+ 	 }
+</Script>
+<style>
+	body {font-size: 200px; font-family: Arial, Helvetica, sans-serif; background-color: #b8cff5}
+</style>
+  <p id="time">Loading...</p>
+</body>
+</html>
